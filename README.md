@@ -34,9 +34,9 @@
  - **Concrete Folder Açtık**
     - KullaniciDAL (IKullaniciDAL'dan ve RepositoryBase<Kullanici>(<Kullanici> yazdık çünkü bu classta T tipinde olan kısım Kullanici gelecek) kalıtım aldık.)
     - RepositoryBase ( IRepositoryBase ve BaseEntity'den(Baseentity HamburgerciEntities projesinde) kalıtım aldık.)
-      
-      
-      
+    - ExtraDAL
+    - MenuDAL    
+            
 RepositoryPattern Kullanıldı.
    
  ## Project 3 - Hamburgerci.WinUI (Usingİnterface) WindowsFormApp(core)
