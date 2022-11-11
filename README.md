@@ -42,6 +42,6 @@ RepositoryPattern Kullanıldı.
  ## Project 3 - Hamburgerci.WinUI (Usingİnterface) WindowsFormApp(core)
  - Dependences kısmından Add Project Reference - > Diğer 2 projeyi
  - Form1 Ekran
-*  GroupBox- 2 Label - 2 TextBox - 1 Buton
+*  GroupBox- 2 Label - 2 TextBox - 2 Buton
 *  passwordchar * ekledik şifrenin textbox'una
 
