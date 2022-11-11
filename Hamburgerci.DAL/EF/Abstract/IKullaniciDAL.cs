@@ -11,7 +11,7 @@ namespace Hamburgerci.DAL.EF.Abstract
 {
     public interface IKullaniciDAL : IRepositoryBase<Kullanici>   // Kullanici Temel tüm entitilerde geçenleri IRepositoryBasen aldık.
     {
-        Kullanici FindByUserName(string userName,string password);   // Ek özellikleri ekledik.
+      
 
     }
 }

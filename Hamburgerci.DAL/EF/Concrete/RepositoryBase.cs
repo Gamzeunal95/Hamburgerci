@@ -19,37 +19,38 @@ namespace Hamburgerci.DAL.EF.Concrete
         }
 
 
-        public int Add(T input)
+        public virtual int Add(T input)
         {
             dbcontext.Set<T>().Add(input);
 
             return dbcontext.SaveChanges();
         }
 
-        public int Delete(T input)
+        public virtual int Delete(T input)
         {
             dbcontext.Set<T>().Remove(input);
 
             return dbcontext.SaveChanges();
         }
 
-        public T Find(string name)
+        // TODO : Pazartesi yapılacak. hata avr
+        public virtual T Find(string name)
         {
             return dbcontext.Set<T>().Find(name);
 
         }
 
-        public IList<T> FindAll()
+        public virtual IList<T> FindAll()
         {
             return dbcontext.Set<T>().ToList();
         }
 
-        public T FindById(int id)
+        public virtual T FindById(int id)
         {
             return dbcontext.Set<T>().Find(id);
         }
 
-        public int Update(T input)
+        public virtual int Update(T input)
         {
             dbcontext.Set<T>().Update(input);
 

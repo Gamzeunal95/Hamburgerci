@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hamburgerci.DAL", "Hamburge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hamburgerci.WinUI", "Hamburgerci.WinUI\Hamburgerci.WinUI.csproj", "{D29AF114-6CB1-4FD4-ADA0-B73364744973}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hamburgerci.BL", "Hamburgerci.BL\Hamburgerci.BL.csproj", "{1FC07F0F-853C-4C80-966D-AE36DDB33C78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D29AF114-6CB1-4FD4-ADA0-B73364744973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D29AF114-6CB1-4FD4-ADA0-B73364744973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D29AF114-6CB1-4FD4-ADA0-B73364744973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC07F0F-853C-4C80-966D-AE36DDB33C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC07F0F-853C-4C80-966D-AE36DDB33C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC07F0F-853C-4C80-966D-AE36DDB33C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC07F0F-853C-4C80-966D-AE36DDB33C78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
