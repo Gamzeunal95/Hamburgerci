@@ -45,3 +45,12 @@ RepositoryPattern Kullanıldı.
 *  GroupBox- 2 Label - 2 TextBox - 2 Buton
 *  passwordchar * ekledik şifrenin textbox'una
 
+ ## Project 4 - HamburgerciBL (BL = bussinesLogic (iş Katmanı))
+ - İş kurallarının düzenlendiği kısım
+ - **Abstract Folder Açtık** 
+   - IManagerBase
+   - IKullaniciManager
+ - **Concrete Folder Açtık**  
+   - ManagerBase
+   - KulaniciManager
+   
