@@ -66,14 +66,19 @@ namespace Hamburgerci.WinUI
             //{
             //    MessageBox.Show(kullanici.Adi + " " + kullanici.Soyadi);
             //}
+            //---
+            //kullaniciManager.Add(new Kullanici()
+            //{
+            //    Adi = txtKullanici.Text,
+            //    Soyadi = "Yilmaz",
+            //    KullaniciAdi = txtKullanici.Text,
+            //    Sifre = txtSifre.Text,
+            //});
 
-            kullaniciManager.Add(new Kullanici()
-            {
-                Adi = txtKullanici.Text,
-                Soyadi = "Yilmaz",
-                KullaniciAdi = txtKullanici.Text,
-                Sifre = txtSifre.Text,
-            });
+            var kullanici = kullaniciManager.Find(p => p.KullaniciAdi == txtKullanici.Text && p.Sifre == txtSifre.Text);
+
+            if (kullanici != null)
+                MessageBox.Show(kullanici.Adi + " " + kullanici.Soyadi);
 
 
         }

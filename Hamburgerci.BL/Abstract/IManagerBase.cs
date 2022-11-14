@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,8 +12,9 @@ namespace Hamburgerci.BL.Abstract
     {
         T FindById(int id);
         T Find(string name);
-        IList<T> FindAll();
+        T Find(Expression<Func<T, bool>> filter = null);
 
+        IList<T> FindAll(Expression<Func<T, bool>> filter = null);
         int Add(T input);
         int Update(T input);
         int Delete(T input);

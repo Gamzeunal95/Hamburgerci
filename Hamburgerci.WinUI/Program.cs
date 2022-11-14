@@ -13,5 +13,10 @@ namespace Hamburgerci.WinUI
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
+
+        public static void deneme(int a)
+        {
+            Console.WriteLine(a * a);
+        }
     }
 }

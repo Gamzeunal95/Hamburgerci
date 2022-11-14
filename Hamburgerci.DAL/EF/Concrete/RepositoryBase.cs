@@ -4,6 +4,7 @@ using Hamburgerci.Entities.Contexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,11 +12,11 @@ namespace Hamburgerci.DAL.EF.Concrete
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : BaseEntity, new()   //Repository<T> yazdık içn T tipinden gelecek onu belirtiyoruz.Baseden gelecek.
     {
-        protected readonly SqlDbContext dbcontext;
+        protected readonly SqlDbcontext dbcontext;
 
         public RepositoryBase()
         {
-            this.dbcontext = new SqlDbContext();
+            this.dbcontext = new SqlDbcontext();
         }
 
 
@@ -32,17 +33,38 @@ namespace Hamburgerci.DAL.EF.Concrete
 
             return dbcontext.SaveChanges();
         }
-
-        // TODO : Pazartesi yapılacak. hata avr
+        //TODO: Pazartesi yapilacak
         public virtual T Find(string name)
         {
             return dbcontext.Set<T>().Find(name);
 
         }
 
+        public T Find(Expression<Func<T, bool>> filter = null)
+        {
+
+            var sorgu = dbcontext.Set<T>();
+
+            if (filter != null)
+                sorgu.Where(filter);
+
+            return sorgu.FirstOrDefault();
+        }
+
         public virtual IList<T> FindAll()
         {
             return dbcontext.Set<T>().ToList();
+        }
+
+        public IList<T> FindAll(Expression<Func<T, bool>> filter = null)
+        {
+            var sorgu = dbcontext.Set<T>();
+
+            if (filter != null)
+                sorgu.Where(filter);
+
+            return sorgu.ToList();
+
         }
 
         public virtual T FindById(int id)
