@@ -14,7 +14,7 @@
  
 - **Contexts Folder Açtık**
    - SqlDbContext (Ve her zaman Microsoft'un DbContext'inden kalıtım almayı unutma)
-     - SqlDbContext içini SQL bağlantısını ve  Entity'lerimizin Ozelliklerini Fluent Api ile yazdık.
+   - **NOT:** SqlDbContext içini SQL bağlantısını ve  Entity'lerimizin Ozelliklerini Fluent Api ile yazdık.
 
 - Proje Dependences Packages kısmına aşağıdaki nuggetları indirdik.
    +  Microsoft.EntityFrameworkCore.SqlServer
