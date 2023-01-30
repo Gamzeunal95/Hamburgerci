@@ -1,6 +1,6 @@
 # Hamburgerci
 
-- BlankSolution açtık Hamburgerci Adında 
+- BlankSolution açıldı Hamburgerci Adında 
 ## Project 1 - HamburgerciEntities
 - **Abstract**
    - BaseEntity Class (Abstract Class)
